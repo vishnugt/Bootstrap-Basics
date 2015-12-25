@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="wow.js"></script>
+  <link rel="stylesheet" href="animate.css" />
 	<script src="jquery.particleground.min.js"></script>
 </head>
 <body>
@@ -76,7 +78,7 @@
 	</ol>
 <div class="carousel-inner" role="listbox">
     <div class="item active">
-    	<div class="carousel-caption">
+    	<div class="carousel-caption bounceInDown animated wow">
     		<h2 style="color:black">Lorel Ipsum<h2>
 			<p style="color:#777777"> Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p><br>
 			<a class="btn btn-lg btn-primary" href="#steinsgatevideo">Lets see</a>
@@ -112,6 +114,7 @@
     	</div>
   		<canvas class="draw" ></canvas>
       <script>
+             new WOW().init();
             var init = function(){
         var isMobile = navigator.userAgent &&
           navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
@@ -186,12 +189,14 @@
 		<div class="row">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-7">
-				<h3>VishnuGt's Quote</h3>
+				<div class="fadeInLeft animated wow"><h3>VishnuGt's Quote</h3></div>
 				<p>Ofcourse Vishnugt didnt say this but he copy pasted this</p>
-				<blockquote>
+				<div class="animated wow pulse">
+          <blockquote>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat eleifend massa at congue. Donec tempor leo enim, vitae blandit tellus rhoncus a. Nulla in tortor vitae quam fermentum cursus eu faucibus eros. Cras aliquet leo nec tincidunt molestie. Nunc augue magna, malesuada vel feugiat eget, luctus non nibh. Sed vel laoreet tellus. Donec eleifend odio enim, vel luctus massa tempus at. Pellentesque malesuada ipsum eget magna auctor egestasNulla feugiat eleifend massa at congue. Donec tempor leo enim, vitae blandit tellus rhoncus a. Nulla in tortor vitae quam fermentum cursus eu faucibus eros. Cras aliquet leo nec tincidunt molestie. Nunc augue magna, malesuada vel feugiat eget, luctus non nibh.vitae quam fermentum cursus eu faucibus eros. Cras aliquet leo nec tincidunt molestie. Nunc augue magna, malesuada vel feugiat eget, luctus non nibh.vitae quam fermentum cursus eu faucibus eros. Cras aliquet leo nec tincidunt molestie. Nunc augue magna, malesuada vel feugiat eget, luctus non nibh. <p>
 					<footer>Lorem Ipsum Generated</footer>
 				</blockquote>
+        </div>
 			</div>
 			<div class="col-2">
 				<br><br>
@@ -204,6 +209,7 @@
 <hr>
 <div style="width:85%" class="container">
 	<h3> Code of this site </h3>
+  <p>Will not work if this page is not on a server!</p>
 	<br>
  	<pre style="overflow: auto; word-wrap: normal; white-space: pre;" class="pre-scrollable"  id="code">	</pre>
 </div>
